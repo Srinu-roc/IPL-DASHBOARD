@@ -1,0 +1,121 @@
+1. TITLE WINNER (SEASON-WISE)
+   ================================ */
+SELECT
+    season,
+    winner AS title_winner
+FROM matches
+WHERE winner IS NOT NULL;
+
+
+/* ================================
+   2. ORANGE CAP – TOP RUN SCORER
+   ================================ */
+SELECT
+    m.season,
+    d.batter AS player,
+    SUM(d.batsman_runs) AS total_runs
+FROM deliveries d
+JOIN matches m
+    ON d.match_id = m.id
+GROUP BY m.season, d.batter
+ORDER BY m.season, total_runs DESC;
+
+
+/* ================================
+   3. PURPLE CAP – TOP WICKET TAKER
+   ================================ */
+SELECT
+    m.season,
+    d.bowler AS player,
+    COUNT(d.is_wicket) AS total_wickets
+FROM deliveries d
+JOIN matches m
+    ON d.match_id = m.id
+WHERE d.is_wicket = 1
+  AND d.player_dismissed IS NOT NULL
+GROUP BY m.season, d.bowler
+ORDER BY m.season, total_wickets DESC;
+
+
+/* ================================
+   4. TOTAL TOURNAMENT SIXES
+   ================================ */
+SELECT
+    m.season,
+    COUNT(*) AS total_sixes
+FROM deliveries d
+JOIN matches m
+    ON d.match_id = m.id
+WHERE d.batsman_runs = 6
+GROUP BY m.season;
+
+
+/* ================================
+   5. TOTAL TOURNAMENT FOURS
+   ================================ */
+SELECT
+    m.season,
+    COUNT(*) AS total_fours
+FROM deliveries d
+JOIN matches m
+    ON d.match_id = m.id
+WHERE d.batsman_runs = 4
+GROUP BY m.season;
+
+
+/* ================================
+   6. MATCHES WON BASED ON TOSS DECISION
+   ================================ */
+SELECT
+    winner,
+    toss_decision,
+    COUNT(*) AS matches_won
+FROM matches
+WHERE winner IS NOT NULL
+GROUP BY winner, toss_decision
+ORDER BY matches_won DESC;
+
+
+/* ================================
+   7. TOSS DECISION BASED WINNING %
+   ================================ */
+SELECT
+    toss_decision,
+    COUNT() * 100.0 / (SELECT COUNT() FROM matches) AS winning_percentage
+FROM matches
+WHERE toss_winner = winner
+GROUP BY toss_decision;
+
+
+/* ================================
+   8. TEAM-WISE MATCH WINS
+   ================================ */
+SELECT
+    winner AS team,
+    COUNT(*) AS total_wins
+FROM matches
+WHERE winner IS NOT NULL
+GROUP BY winner
+ORDER BY total_wins DESC;
+
+
+/* ================================
+   9. SEASON-WISE TOTAL MATCHES
+   ================================ */
+SELECT
+    season,
+    COUNT(*) AS total_matches
+FROM matches
+GROUP BY season
+ORDER BY season;
+
+
+/* ================================
+   10. VENUE-WISE MATCH COUNT
+   ================================ */
+SELECT
+    venue,
+    COUNT(*) AS matches_played
+FROM matches
+GROUP BY venue
+ORDER BY matches_played DESC;
