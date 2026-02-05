@@ -29,3 +29,9 @@ Venue Insights
 📌 Screenshots are stored in the screenshots/ folder.# IPL-DASHBOARD
 
 ![IPL Dashboard Image](https://github.com/user-attachments/assets/e9e8eb1b-3079-4689-9525-b7b463966db7)
+
+FINAL
+ Developed By:G. Srinivas
+📧 Contact: golajanasrinivas26@gmail.com
+🔗 LinkedIn: golajana-srinivas
+
