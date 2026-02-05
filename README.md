@@ -1,4 +1,7 @@
 IPL Data Analytics Dashboard
+
+
+
 📌 Project Overview
 This project presents an IPL (Indian Premier League) Data Analytics Dashboard that analyzes match and player performance across multiple seasons. The dashboard provides actionable insights into team performance, player statistics, venue trends, and match outcomes using interactive visualizations.
 
