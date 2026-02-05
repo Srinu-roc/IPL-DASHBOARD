@@ -1,0 +1,1202 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='IPL Matches 2008-2020+' inline='true' name='federated.1l3cfg40k8d8p31cpwua00o9pvpj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IPL Matches 2008-2020' name='textscan.0qb5uqy1nn8g9i18ndoo40tlfxeg'>
+            <connection class='textscan' directory='C:/Users/Ganesh/Downloads' filename='IPL Matches 2008-2020.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0qb5uqy1nn8g9i18ndoo40tlfxeg' name='IPL Matches 2008-2020.csv' table='[IPL Matches 2008-2020#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='string' name='city' ordinal='1' />
+              <column datatype='date' name='date' ordinal='2' />
+              <column datatype='string' name='player_of_match' ordinal='3' />
+              <column datatype='string' name='venue' ordinal='4' />
+              <column datatype='integer' name='neutral_venue' ordinal='5' />
+              <column datatype='string' name='team1' ordinal='6' />
+              <column datatype='string' name='team2' ordinal='7' />
+              <column datatype='string' name='toss_winner' ordinal='8' />
+              <column datatype='string' name='toss_decision' ordinal='9' />
+              <column datatype='string' name='winner' ordinal='10' />
+              <column datatype='string' name='result' ordinal='11' />
+              <column datatype='integer' name='result_margin' ordinal='12' />
+              <column datatype='string' name='eliminator' ordinal='13' />
+              <column datatype='string' name='method' ordinal='14' />
+              <column datatype='string' name='umpire1' ordinal='15' />
+              <column datatype='string' name='umpire2' ordinal='16' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0qb5uqy1nn8g9i18ndoo40tlfxeg' name='IPL Ball-by-Ball 2008-2020.csv' table='[IPL Ball-by-Ball 2008-2020#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='integer' name='inning' ordinal='1' />
+              <column datatype='integer' name='over' ordinal='2' />
+              <column datatype='integer' name='ball' ordinal='3' />
+              <column datatype='string' name='batsman' ordinal='4' />
+              <column datatype='string' name='non_striker' ordinal='5' />
+              <column datatype='string' name='bowler' ordinal='6' />
+              <column datatype='integer' name='batsman_runs' ordinal='7' />
+              <column datatype='integer' name='extra_runs' ordinal='8' />
+              <column datatype='integer' name='total_runs' ordinal='9' />
+              <column datatype='integer' name='non_boundary' ordinal='10' />
+              <column datatype='integer' name='is_wicket' ordinal='11' />
+              <column datatype='string' name='dismissal_kind' ordinal='12' />
+              <column datatype='string' name='player_dismissed' ordinal='13' />
+              <column datatype='string' name='fielder' ordinal='14' />
+              <column datatype='string' name='extras_type' ordinal='15' />
+              <column datatype='string' name='batting_team' ordinal='16' />
+              <column datatype='string' name='bowling_team' ordinal='17' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[ball]' value='[IPL Ball-by-Ball 2008-2020.csv].[ball]' />
+          <map key='[batsman]' value='[IPL Ball-by-Ball 2008-2020.csv].[batsman]' />
+          <map key='[batsman_runs]' value='[IPL Ball-by-Ball 2008-2020.csv].[batsman_runs]' />
+          <map key='[batting_team]' value='[IPL Ball-by-Ball 2008-2020.csv].[batting_team]' />
+          <map key='[bowler]' value='[IPL Ball-by-Ball 2008-2020.csv].[bowler]' />
+          <map key='[bowling_team]' value='[IPL Ball-by-Ball 2008-2020.csv].[bowling_team]' />
+          <map key='[city]' value='[IPL Matches 2008-2020.csv].[city]' />
+          <map key='[date]' value='[IPL Matches 2008-2020.csv].[date]' />
+          <map key='[dismissal_kind]' value='[IPL Ball-by-Ball 2008-2020.csv].[dismissal_kind]' />
+          <map key='[eliminator]' value='[IPL Matches 2008-2020.csv].[eliminator]' />
+          <map key='[extra_runs]' value='[IPL Ball-by-Ball 2008-2020.csv].[extra_runs]' />
+          <map key='[extras_type]' value='[IPL Ball-by-Ball 2008-2020.csv].[extras_type]' />
+          <map key='[fielder]' value='[IPL Ball-by-Ball 2008-2020.csv].[fielder]' />
+          <map key='[id (IPL Ball-by-Ball 2008-2020.csv)]' value='[IPL Ball-by-Ball 2008-2020.csv].[id]' />
+          <map key='[id]' value='[IPL Matches 2008-2020.csv].[id]' />
+          <map key='[inning]' value='[IPL Ball-by-Ball 2008-2020.csv].[inning]' />
+          <map key='[is_wicket]' value='[IPL Ball-by-Ball 2008-2020.csv].[is_wicket]' />
+          <map key='[method]' value='[IPL Matches 2008-2020.csv].[method]' />
+          <map key='[neutral_venue]' value='[IPL Matches 2008-2020.csv].[neutral_venue]' />
+          <map key='[non_boundary]' value='[IPL Ball-by-Ball 2008-2020.csv].[non_boundary]' />
+          <map key='[non_striker]' value='[IPL Ball-by-Ball 2008-2020.csv].[non_striker]' />
+          <map key='[over]' value='[IPL Ball-by-Ball 2008-2020.csv].[over]' />
+          <map key='[player_dismissed]' value='[IPL Ball-by-Ball 2008-2020.csv].[player_dismissed]' />
+          <map key='[player_of_match]' value='[IPL Matches 2008-2020.csv].[player_of_match]' />
+          <map key='[result]' value='[IPL Matches 2008-2020.csv].[result]' />
+          <map key='[result_margin]' value='[IPL Matches 2008-2020.csv].[result_margin]' />
+          <map key='[team1]' value='[IPL Matches 2008-2020.csv].[team1]' />
+          <map key='[team2]' value='[IPL Matches 2008-2020.csv].[team2]' />
+          <map key='[toss_decision]' value='[IPL Matches 2008-2020.csv].[toss_decision]' />
+          <map key='[toss_winner]' value='[IPL Matches 2008-2020.csv].[toss_winner]' />
+          <map key='[total_runs]' value='[IPL Ball-by-Ball 2008-2020.csv].[total_runs]' />
+          <map key='[umpire1]' value='[IPL Matches 2008-2020.csv].[umpire1]' />
+          <map key='[umpire2]' value='[IPL Matches 2008-2020.csv].[umpire2]' />
+          <map key='[venue]' value='[IPL Matches 2008-2020.csv].[venue]' />
+          <map key='[winner]' value='[IPL Matches 2008-2020.csv].[winner]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_of_match]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>player_of_match</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neutral_venue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[neutral_venue]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>neutral_venue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team1]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>team1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team2]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>team2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_winner]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>toss_winner</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_decision]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>toss_decision</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>result</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result_margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[result_margin]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>result_margin</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eliminator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[eliminator]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>eliminator</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[method]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>method</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire1]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>umpire1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire2]</local-name>
+            <parent-name>[IPL Matches 2008-2020.csv]</parent-name>
+            <remote-alias>umpire2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id (IPL Ball-by-Ball 2008-2020.csv)]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inning</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inning]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>inning</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[over]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>over</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ball]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>ball</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batsman]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>batsman</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_striker]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>non_striker</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowler]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>bowler</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[batsman_runs]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>batsman_runs</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extra_runs]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>extra_runs</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_boundary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[non_boundary]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>non_boundary</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_wicket</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_wicket]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>is_wicket</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dismissal_kind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dismissal_kind]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>dismissal_kind</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_dismissed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_dismissed]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>player_dismissed</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fielder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fielder]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>fielder</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extras_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[extras_type]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>extras_type</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batting_team]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>batting_team</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowling_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowling_team]</local-name>
+            <parent-name>[IPL Ball-by-Ball 2008-2020.csv]</parent-name>
+            <remote-alias>bowling_team</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Max date' datatype='boolean' name='[Calculation_935341401667330048]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[date]={ FIXED :MAX([date])}' />
+      </column>
+      <column caption='IPL Ball-by-Ball 2008-2020.csv' datatype='table' name='[__tableau_internal_object_id__].[IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945]' role='measure' type='quantitative' />
+      <column caption='IPL Matches 2008-2020.csv' datatype='table' name='[__tableau_internal_object_id__].[IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC]' role='measure' type='quantitative' />
+      <column caption='Ball' datatype='integer' name='[ball]' role='measure' type='quantitative' />
+      <column caption='Batsman' datatype='string' name='[batsman]' role='dimension' type='nominal' />
+      <column caption='Batsman Runs' datatype='integer' name='[batsman_runs]' role='measure' type='quantitative' />
+      <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' type='nominal' />
+      <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+      <column caption='Bowling Team' datatype='string' name='[bowling_team]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dismissal Kind' datatype='string' name='[dismissal_kind]' role='dimension' type='nominal' />
+      <column caption='Eliminator' datatype='string' name='[eliminator]' role='dimension' type='nominal' />
+      <column caption='Extra Runs' datatype='integer' name='[extra_runs]' role='measure' type='quantitative' />
+      <column caption='Extras Type' datatype='string' name='[extras_type]' role='dimension' type='nominal' />
+      <column caption='Fielder' datatype='string' name='[fielder]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[id (IPL Ball-by-Ball 2008-2020.csv)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Inning' datatype='integer' name='[inning]' role='measure' type='quantitative' />
+      <column caption='Is Wicket' datatype='integer' name='[is_wicket]' role='measure' type='quantitative' />
+      <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+      <column caption='Neutral Venue' datatype='integer' name='[neutral_venue]' role='measure' type='quantitative' />
+      <column caption='Non Boundary' datatype='integer' name='[non_boundary]' role='measure' type='quantitative' />
+      <column caption='Non Striker' datatype='string' name='[non_striker]' role='dimension' type='nominal' />
+      <column caption='Over' datatype='integer' name='[over]' role='measure' type='quantitative' />
+      <column caption='Player Dismissed' datatype='string' name='[player_dismissed]' role='dimension' type='nominal' />
+      <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+      <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+      <column caption='Result Margin' datatype='integer' name='[result_margin]' role='measure' type='quantitative' />
+      <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+      <column caption='Team2' datatype='string' name='[team2]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <column caption='Umpire1' datatype='string' name='[umpire1]' role='dimension' type='nominal' />
+      <column caption='Umpire2' datatype='string' name='[umpire2]' role='dimension' type='nominal' />
+      <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:winner:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;Delhi Daredevils&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;Royal Challengers Bangalore&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Mumbai Indians&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Pune Warriors&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Gujarat Lions&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Sunrisers Hyderabad&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;Kochi Tuskers Kerala&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;Kolkata Knight Riders&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Deccan Chargers&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Rising Pune Supergiant&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;NA&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Chennai Super Kings&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Rajasthan Royals&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Delhi Capitals&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Rising Pune Supergiants&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;Kings XI Punjab&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='IPL Ball-by-Ball 2008-2020.csv' id='IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945'>
+            <properties context=''>
+              <relation connection='textscan.0qb5uqy1nn8g9i18ndoo40tlfxeg' name='IPL Ball-by-Ball 2008-2020.csv' table='[IPL Ball-by-Ball 2008-2020#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='integer' name='inning' ordinal='1' />
+                  <column datatype='integer' name='over' ordinal='2' />
+                  <column datatype='integer' name='ball' ordinal='3' />
+                  <column datatype='string' name='batsman' ordinal='4' />
+                  <column datatype='string' name='non_striker' ordinal='5' />
+                  <column datatype='string' name='bowler' ordinal='6' />
+                  <column datatype='integer' name='batsman_runs' ordinal='7' />
+                  <column datatype='integer' name='extra_runs' ordinal='8' />
+                  <column datatype='integer' name='total_runs' ordinal='9' />
+                  <column datatype='integer' name='non_boundary' ordinal='10' />
+                  <column datatype='integer' name='is_wicket' ordinal='11' />
+                  <column datatype='string' name='dismissal_kind' ordinal='12' />
+                  <column datatype='string' name='player_dismissed' ordinal='13' />
+                  <column datatype='string' name='fielder' ordinal='14' />
+                  <column datatype='string' name='extras_type' ordinal='15' />
+                  <column datatype='string' name='batting_team' ordinal='16' />
+                  <column datatype='string' name='bowling_team' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='IPL Matches 2008-2020.csv' id='IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC'>
+            <properties context=''>
+              <relation connection='textscan.0qb5uqy1nn8g9i18ndoo40tlfxeg' name='IPL Matches 2008-2020.csv' table='[IPL Matches 2008-2020#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='city' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='string' name='player_of_match' ordinal='3' />
+                  <column datatype='string' name='venue' ordinal='4' />
+                  <column datatype='integer' name='neutral_venue' ordinal='5' />
+                  <column datatype='string' name='team1' ordinal='6' />
+                  <column datatype='string' name='team2' ordinal='7' />
+                  <column datatype='string' name='toss_winner' ordinal='8' />
+                  <column datatype='string' name='toss_decision' ordinal='9' />
+                  <column datatype='string' name='winner' ordinal='10' />
+                  <column datatype='string' name='result' ordinal='11' />
+                  <column datatype='integer' name='result_margin' ordinal='12' />
+                  <column datatype='string' name='eliminator' ordinal='13' />
+                  <column datatype='string' name='method' ordinal='14' />
+                  <column datatype='string' name='umpire1' ordinal='15' />
+                  <column datatype='string' name='umpire2' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[id (IPL Ball-by-Ball 2008-2020.csv)]' />
+            </expression>
+            <first-end-point object-id='IPL Matches 2008-2020.csv_2D12FBCDA32E44FEA2E2974F8A5415FC' />
+            <second-end-point object-id='IPL Ball-by-Ball 2008-2020.csv_01F9ECEB26C8499A982189866B084945' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Orange Cap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D0B22F4E-2915-43FD-AC7E-6516087F38ED}' />
+    </worksheet>
+    <worksheet name='Purple cap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{15DDE458-E55E-4723-85D7-34026FD7CED6}' />
+    </worksheet>
+    <worksheet lock-quick-filters='true' name='Tittle winner'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3028CFBA-EA45-48AF-BDA9-CC258E3B3C56}' />
+    </worksheet>
+    <worksheet name='Tournment 4&apos;s'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{ABC72D47-D5A3-4FEF-92F3-F0445F2BEF21}' />
+    </worksheet>
+    <worksheet lock-quick-filters='true' name='Tournment 6&apos;s'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C90FF3A2-80B3-4258-A33F-813F019CC9AF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Tittle winner'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:Calculation_935341401667330048:nk]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:batsman:nk]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:date:ok]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:winner:nk]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[qr:date:ok]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{207669CD-84E5-4EDE-9770-B719CA0F08A9}' />
+    </window>
+    <window class='worksheet' name='Orange Cap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:batsman:nk]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:extras_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F1EDEC81-B726-4770-9D9C-39DDC7C50825}' />
+    </window>
+    <window class='worksheet' name='Purple cap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:bowler:nk]</field>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:dismissal_kind:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{0C3EC709-9C9A-41C6-AD13-F1A8C5BC6478}' />
+    </window>
+    <window class='worksheet' name='Tournment 6&apos;s'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:batsman_runs:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DB813AC7-BFC6-4CFA-BFCC-CC52F996FCF1}' />
+    </window>
+    <window class='worksheet' name='Tournment 4&apos;s'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l3cfg40k8d8p31cpwua00o9pvpj].[none:batsman_runs:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{379CD80E-F588-419A-8F15-908F879003B2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Orange Cap' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Purple cap' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Tittle winner' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Tournment 4&apos;s' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Tournment 6&apos;s' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
